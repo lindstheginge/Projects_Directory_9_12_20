@@ -1,15 +1,20 @@
-if __name__ == "__main__":
-    def cylinder_volume():
-        r = int(input("Enter radius of cylinder:"))
-        h = int(input("Enter height of cylinder:"))
+    def cylinder_volume(r, h):
         r_squared = r * r
         volume = r_squared * h * 3.14
-        print("The volume of the cylinder is ", volume)
-cylinder_volume()
+        return volume
 
-if __name__ == "__main__":
-    def square_root_function():
-        x = int(input("Enter the number to et the square root of"))
+if __name == "__main__":
+    radius = int(input("Enter in radius: "))
+    height = int(input("Enter in height: "))
+    volume = cylinder_volume(radius, height)
+    print("The volume is: ", volume)
+
+
+    def get_square_root(x):
         x_squared = x * x
-        print("The square root of ", x, "is ", x_squared)
-square_root_function()
+        return x_squared
+
+if __name == "__main__":
+    x = int(input("Enter number to find the square root of: "))
+    x_squared = get_square_root(x)
+    print("The square root of ", x, "is: ", x_squared)
